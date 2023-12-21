@@ -1,28 +1,29 @@
-# Webex Room Management Scripts
-
-![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)
+# webex-room-management-scripts
 
 This repository contains scripts to manage memberships in a Webex Room. The scripts read configuration and email data from files, and interact with the Webex API to add or delete members from a specified room.
+
+![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)
 
 ## Table of Contents
 
 - [Webex Room Management Scripts](#webex-room-management-scripts)
   - [Table of Contents](#table-of-contents)
-  - [Files](#files)
-  - [Setup](#setup)
+  - [Use Case Description](#use-case-description)
+  - [Installation](#installation)
   - [Configuration](#configuration)
   - [Usage](#usage)
-  - [Dependencies](#dependencies)
-  - [Error Handling](#error-handling)
-
-## Files
+  - [How to test the software](#how-to-test-the-software)
+  - [Known issues](#known-issues)
+  - [Getting help](#getting-help)
+  - [Author(s)](#authors)
+ 
+## Use Case Description
 
 1. `add_members.py` - Script to add members to a Webex room.
 2. `delete_members.py` - Script to delete members from a Webex room based on a list of emails.
-3. `config.ini` - Configuration file containing necessary credentials and room details.
-4. `emails.txt` - Example file containing a list of email addresses, one per line.
 
-## Setup
+## Installation
+
 1. Clone this repository.
 2. Install the required Python libraries using pip:
 
@@ -57,12 +58,20 @@ $ python add_members.py
 $ python delete_members.py
 ```
 
-## Dependencies
+## How to test the software
 
-- Python 3.x
-- `requests` library: Install with `pip install requests`
-- `configparser` library: Install with `pip install configparser`
+Start with a small run to ensure you have everything configured correctly. Adding yourself and power users to a room first is always a good way to start. The scripts will output error messages to the console if any issues are encountered, such as invalid credentials, failure to read the email file, or failure to add or delete a member.
 
-## Error Handling
+## Known issues
 
-The scripts will output error messages to the console if any issues are encountered, such as invalid credentials, failure to read the email file, or failure to add or delete a member.
+There are no known issues at this time.
+
+## Getting help
+
+Please email <iambrianbell@gmail.com>
+
+## Author(s)
+
+This project was written and is maintained by the following individuals:
+
+* Brian Bell <iambrianbell@gmail.com>
