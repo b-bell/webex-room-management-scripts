@@ -57,6 +57,7 @@ Note: A room ID is equal to a space ID.
 $ python add_members.py
 $ python delete_members.py
 ```
+Note: The add_members.py script requires that the user associted with the access token you provided has permissions to add users to the space. Users can only be added to a space if they are a member of your Webex instance. Review [this documentation on the create membership API](https://developer.webex.com/docs/api/v1/memberships/create-a-membership) for more details.
 
 ## How to test the software
 
